@@ -1,5 +1,13 @@
 import ControlledProductGrid from '@nft-marketplace/components/Grids/ProductGrid/controlled/ControlledProductGrid';
-import { Heading, HStack, Link, Text, Image, Box } from '@chakra-ui/react';
+import {
+  Heading,
+  HStack,
+  Link,
+  Text,
+  Image,
+  Box,
+  Flex,
+} from '@chakra-ui/react';
 import Head from 'next/head';
 
 export function Index() {
@@ -8,19 +16,14 @@ export function Index() {
       <Head>
         <title>NFT Marketplace Demo</title>
       </Head>
-      <Link
-        isExternal
-        href="https://github.com/buildable/nft-marketplace-private"
-      >
-        <Image
-          mr="30px"
-          mt="15px"
-          w="50px"
-          marginLeft="auto"
-          alt="Github Logo"
-          src="https://assets.buildable.dev/catalog/node-templates/github.svg"
-        />
-      </Link>
+      <Flex mr="30px" mt="15px" w="50px" marginLeft="auto">
+        <Link isExternal href="https://github.com/buildable/nft-marketplace">
+          <Image
+            alt="Github Logo"
+            src="https://assets.buildable.dev/catalog/node-templates/github.svg"
+          />
+        </Link>
+      </Flex>
       <Heading color="black" w="100%" textAlign="center">
         NFT Marketplace Demo
       </Heading>
